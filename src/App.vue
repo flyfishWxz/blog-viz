@@ -39,10 +39,11 @@ onMounted(async () => {
 
 <template>
   <div id="app">
-    <header>
-      <h1>🐟 飞鱼博客统计站</h1>
+    <section class="hero">
+      <div class="hero-avatar">🐟</div>
+      <h1>飞鱼博客统计站</h1>
       <p>记录每一篇文字，追踪每一次阅读</p>
-    </header>
+    </section>
 
     <main v-if="!loading">
       <StatsPanel :posts="posts" :totalViews="totalViews" />
@@ -50,11 +51,11 @@ onMounted(async () => {
     </main>
 
     <div v-else class="loading">
-      <p>加载中...</p>
+      <span>加载中</span>
     </div>
 
     <footer>
-      <p>Powered by Vue 3 + ECharts | Deployed on GitHub Pages</p>
+      <p>Powered by <a href="https://vuejs.org" target="_blank">Vue 3</a> + <a href="https://echarts.apache.org" target="_blank">ECharts</a></p>
     </footer>
   </div>
 </template>
