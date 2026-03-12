@@ -222,8 +222,8 @@ function initTagsChart() {
     </div>
     
     <div class="chart-container">
-      <div ref="trendChartRef" style="width: 100%;%;"></div>
- height: 100    </div>
+      <div ref="trendChartRef" style="width: 100%; height: 100%;"></div>
+    </div>
     
     <h3 class="chart-title">🔥 Top 10 热门文章</h3>
     <div class="chart-container chart-container-small">
